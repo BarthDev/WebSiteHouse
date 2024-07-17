@@ -1,0 +1,1078 @@
+@font-face {
+    font-family: Aeonik-Bold;
+    src: url(/assets/fonts/AeonikTRIAL-Bold.otf);
+}
+
+@font-face {
+    font-family: Aeonik-Regular;
+    src: url(/assets/fonts/AeonikTRIAL-Regular.otf);
+}
+
+@font-face {
+    font-family: Aeonik-Light;
+    src: url(/assets/fonts/AeonikTRIAL-Light.otf);
+}
+
+:root{
+    --color-blue: #C9E2E9;
+    --color-longing: #FADCC2;
+    --color-black: #313131;
+    --color-gray: #ECECEC;
+    --color-gray-input: #CBCBCB;
+
+    --font-bold: Aeonik-Bold;
+    --font-regular: Aeonik-Regular;
+    --font-light: Aeonik-Light;
+}
+
+.headerPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
+
+}
+
+.navbar{
+    width: 80%;
+    background-color: var(--color-gray);
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbarContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbarLogo {
+    display: flex;
+    align-items: center;
+}
+
+.navbarLogo img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.navbarLogoName{
+    font-family: var(--font-bold);
+    
+}
+
+#links{
+    display: none;
+}
+
+#otherServices{
+        display: none;
+    }
+
+    #contactUs{
+        display: none;
+    }
+    
+    .welcomeAllstate{
+        width: 100%;
+        height: 340px;
+        display: flex;
+        justify-content: center;
+        padding-top: 8%;
+    }
+    .welcomeAllstateContainer{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(90deg, rgba(201,226,233,1) 0%, rgba(250,220,194,1) 100%);
+        border-radius: 30px;
+    }
+    .welcomeAllstateTexts{
+        width: 80%;
+        height: 340px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .welcomeAllstateSub{
+        font-family: var(--font-light);
+        font-size: 20px;
+    }
+    
+    
+    .welcomeAllstateTitle{
+        font-family: var(--font-bold);
+        font-size: 32px;
+    }
+    
+    
+    .welcomeAllstateParagraph{
+        font-family: var(--font-light);
+        font-size: 14px;
+        line-height: 1.2rem;
+    }
+    
+    
+    .welcomeAllstateForm{
+        display: flex;
+        align-items: center;
+        background-color: white; 
+        border-radius: 30px;
+       
+    }
+    .welcomeAllstateForm input{
+        border: none;
+        outline: none;
+        width: 130px;
+        height: 25px;
+        padding: 10px;
+        border-radius: 20px;
+        flex: 1;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    
+    
+    .welcomeAllstateForm button{
+        background-color: var(--color-black); 
+        color: white;
+        width: 120px;
+        height: 40px;
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        margin-right: 10px;
+        border-radius: 40px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+    }
+    
+    
+.welcomeAllstateForm input::placeholder {
+    color: var(--color-gray-input);
+}
+    
+#welcomeAllstateImg{
+    display: none;
+}
+
+.steps{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18%;
+}
+
+.stepsContainer{
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.textsTitulosSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    color: var(--color-black);
+}
+
+.textsTitulosSectionSub{
+    font-family: var(--font-light);
+    font-size: 20px;
+}
+
+.textsTitulosSectionTitle{
+    font-family: var(--font-bold);
+    font-size: 32px;
+}
+
+.stepsCards{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.stepCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.stepCardTitle{
+    font-family: var(--font-regular);
+    font-size: 24px;
+}
+
+.stepCardParagraph{
+    font-family: var(--font-light);
+    font-size: 14px;
+    line-height: 1.2rem;
+}
+
+.resentProjects{
+    display: flex;
+    width: 100%;
+    height: 550px;
+    justify-content: center;
+    padding-top: 18%;
+}
+
+.resentProjectsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.resentProjectsCard{
+    width: 100%;
+}
+
+.resentProjectsCardsItem{
+    width: 351px;
+    height: 361px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-gray);
+}
+
+.resentProjectsCardsItem img{
+    width: 100%;
+}
+
+.resentProjectsCardTexts{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    color: var(--color-black);
+   
+}
+
+.resentProjectsCardTitleStar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8%;
+}
+
+.resentProjectsCardTitleStarTitle{
+    font-family: var(--font-regular);
+    font-size: 19px;
+}
+
+#card02{
+    display: none;
+}
+
+#card03{
+        display: none;
+    }
+
+.fa-star{
+    color: #F8D98D !important;
+}
+
+.resentProjectsCardTitleStarNumberStar{
+    font-family: var(--font-regular);
+    font-size: 16px;
+    color: var(--color-black);
+}
+
+.resentProjectsCardParagraph{
+    font-family: var(--font-regular);
+    font-size: 15px;
+    color: #747474;
+    line-height: 1.2rem;
+}
+
+.resentProjectsCardPrice{
+    display: flex;
+    justify-content: space-between;
+}
+
+.resentProjectsCardPriceNumber{
+    font-family: var(--font-bold);
+    font-size: 22px;
+}
+
+.resentProjectsCardPriceDay{
+    font-family: var(--font-regular);
+    font-size: 16px;
+}
+
+.resentProjectsCardPriceBtn a {
+    text-decoration: none;
+    font-family: var(--font-light);
+    font-size: 16px;
+    color: var(--color-black);
+}
+
+
+
+.bestServices{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-black);
+    align-items: center;
+}
+
+.bestServicesContainer{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    gap: 20px;
+}
+
+.bestServicesInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bestServicesItem{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+   
+}
+
+.bestServicesText{
+    font-family: var(--font-regular);
+    font-size: 19px;
+    line-height: 1.4rem;
+    font-weight: 100;
+}
+
+.bestServicesBox{
+    width: 350px;
+    height: 310px;
+    background: linear-gradient(90deg, var(--color-blue) 0%, var(--color-longing) 100%);
+    border-radius: 20px;
+}
+
+.bestServicesBox img{
+    padding-top: 17%;
+}
+
+
+.whoWeAre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8%;
+}
+
+.whoWeAreContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.whoWeAreContent{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.whoWeAreContent img {
+    width: 349px;
+    
+}
+
+.whoWeAreTexts{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.whoWeAreTextsTitle{
+    font-family: var(--font-regular);
+    font-size: 20px;
+}
+
+.whoWeAreTextsParagraph{
+    font-family: var(--font-light);
+    font-size: 14px;
+    line-height: 1.3rem;
+}
+
+.whoWeAreBtn{
+    display: flex;
+    gap: 20px;
+}
+
+.whoWeAreBtnContactUs{
+    width: 40%;
+    height: 41px;
+    background-color: var(--color-black);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 34px;
+    text-decoration: none;
+    font-family: var(--font-bold);
+    font-size: 14px;
+    color: var(--color-gray);
+}
+
+.whoWeAreBtnReadMore{
+    width: 40%;
+    height: 41px;
+    background-color: var(--color-gray);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 34px;
+    text-decoration: none;
+    font-family: var(--font-bold);
+    font-size: 14px;
+    color: var(--color-black);
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+.whoWeAreScore{
+    display: flex;
+    gap: 80px;
+    
+}
+
+.whoWeAreScoreItens{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.whoWeAreNumber{
+    font-family: var(--font-bold);
+    color: var(--color-black);
+    font-size: 32px;
+}
+
+.whoWeAreName{
+    font-family: var(--font-regular);
+    color: var(--color-black);
+    font-size: 13px;
+}
+
+.newsletter{
+    padding-top: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletterCard{
+    width: 90%;
+    height: 628px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(90deg, rgba(201,226,233,1) 0%, rgba(250,220,194,1) 100%);
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.newsletterContainer{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.newsletterTitle{
+    font-family: var(--font-bold);
+    font-size: 40px;
+    color: var(--color-black);
+}
+
+.newsletterParagraph{
+    font-family: var(--font-light);
+    font-size: 18px;
+    color: var(--color-black);
+}
+
+.newsletterForm{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.newsletterInput{
+    border: none;
+    outline: none;
+    width: 130px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    flex: 1;
+    font-size: 16px;
+    margin-right: 10px;
+
+}
+
+.newsletterButton{
+    background-color: var(--color-black); 
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+
+}
+
+.footer{
+    padding-top: 8%;
+    
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.footerContainer{
+    width: 70%;
+    text-align: center;
+    height: 520px;
+}
+
+.footerContent{
+    display: flex;
+    
+    flex-direction: column;
+    gap: 20px;
+}
+.footerContentContainerLogo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footerContentLogoName{
+    font-family: var(--font-bold);
+    font-size: 25px;
+}
+
+.footerContentText{
+    font-size: 18px;
+    font-family: var(--font-light);
+}
+
+.footerMenuContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.footerMenu{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footerMenu a {
+    font-size: 15px;
+    color: var(--color-black);
+    font-family: var(--font-regular);
+    text-decoration: none;
+}
+
+.footerMenuTitle{
+    font-size: 20px !important;
+    color: var(--color-black);
+    font-family: var(--font-bold) !important;
+}
+.footerMenuOne{
+    display: flex;
+    gap: 40px;
+
+}
+.footerMenusecond{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.footerLine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 8%;
+    height: 1px;
+    background-color: #D9D9D9;
+}
+
+.footerContainer small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4%;
+    font-family: var(--font-regular);
+}
+
+@media screen and (min-width: 768px){
+
+  
+
+    .welcomeAllstateSub{
+        font-size: 28px;
+    }
+
+    .welcomeAllstateTitle{
+        font-size: 42px;
+    }
+
+    .welcomeAllstateParagraph{
+        font-size: 18px;
+        line-height: 1.5rem;
+    }
+
+    .welcomeAllstateInput{
+        width: 230px;
+    }
+
+    .steps{
+        padding-top: 10%
+    }
+
+    .stepsContainer{
+        width: 90%;
+    }
+
+    .stepsCards{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .resentProjects{
+        width: 100%;
+        padding-top: 10%;
+        justify-content: center;
+    }
+
+    .resentProjectsContainer{
+        display: flex;
+        width: 90%;
+    }
+
+    .resentProjectsCardContainer{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    #card02{
+    display: flex;
+    }
+
+    .bestServicesContainer{
+        flex-direction: row;
+    }
+
+    .textsTitulosSectionTitle br {
+        display: none;
+    }
+
+    .bestServicesItem{
+        width: 90%;
+        text-align: start;
+        gap: 10px;
+    }
+    
+    .bestServicesText{
+        font-size: 17px;
+    }
+    
+    .textsTitulosSection{
+        text-align: start;
+        align-items: start;
+    }
+
+    .welcomeAllstateForm input{
+        width: 230px;
+    }
+
+    #whoWeAreTitulosSection{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .whoWeAreContent{
+        width: 90%;
+        flex-direction: row-reverse;
+      
+    }
+
+    .whoWeAreTextsTitle{
+        font-size: 32px;
+    }
+
+    .whoWeAreTextsParagraph{
+        font-size: 20px;
+        line-height: 1.6rem;
+    }
+
+    .whoWeAreNumber{
+        font-size: 40px;
+    }
+
+    .whoWeAreName{
+        font-size: 20px;
+    }
+
+    .footerContainer{
+        height: 350px;
+    }
+
+    .footerMenuContainer{
+        flex-direction: row;
+    }
+  
+    
+}
+
+@media screen and (min-width: 1024px){
+    
+    #hamburger{
+        display: none;
+    }
+
+    .navbar{
+        width: 90%;
+    }
+
+    .navbarLinks{
+        font-family: var(--font-regular);
+        width: 490px;
+        height: 35px;
+        border-radius: 40px;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-black);
+        display: flex;
+        background-color: #F6F6F6;
+        text-decoration: none;
+        list-style-type: none;
+        gap: 30px;
+    }
+
+    .navbarLinks li:hover{
+        color: #393F6D;
+        font-family: var(--font-bold);
+    }
+
+    .fa-magnifying-glass{
+        padding-right: 1%;
+    }
+
+    #links{
+    display: flex;
+    }
+
+    #otherServices{
+        display: flex;
+    }
+
+    #contactUs{
+        display: flex;
+    }
+    
+  
+    .navbarLinksOtherServices{
+        text-decoration: none;
+        font-family: var(--font-regular);
+        color: var(--color-black);
+    }
+
+    .navbarLinksOtherServices:hover{
+        color: #393F6D;
+        font-family: var(--font-bold);
+    }
+
+    .navbarBtnContactUs{
+        width: 115px;
+        height: 31px;
+        border: solid 1px #C5C5C5;
+        border-radius: 15px;
+        text-align: center;
+        text-decoration: none;
+        display: flex; 
+        font-size: 14px;
+        font-family: var(--font-bold);
+        color: var(--color-black);
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .navbarBtnContactUs:hover{
+        background-color: var(--color-black);
+        color: var(--color-gray);
+    }
+
+    .welcomeAllstateContainer {
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px; 
+    }
+    
+    .welcomeAllstateTexts {
+        padding-left: 8%;
+        width: 40%; 
+        text-align: left; 
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    #welcomeAllstateImg {
+        width: 50%; 
+        display: block;
+    }
+
+    .welcomeAllstateButton {
+        height: 35px;
+    }
+
+    .welcomeAllstateTitle{
+        font-size: 37px;
+    }
+
+    #card03{
+        display: flex;
+    }
+
+    .headerPrincipal{
+        padding-top: 1%;
+    }
+
+    .welcomeAllstate{
+        padding-top: 2%;
+    }
+
+    .welcomeAllstateContainer{
+        height: 600px;
+    }
+
+    .steps{
+        padding-top: 30%;
+    }
+
+    .welcomeAllstateTexts{
+        gap: 30px;
+    }
+
+    .welcomeAllstateSub{
+        font-size: 24px;
+    }
+
+    .welcomeAllstateTitle{
+        font-size: 64px;
+    }
+
+    .welcomeAllstateParagraph{
+        font-size: 18px;
+    }
+
+    .welcomeAllstateInput{
+        width: 300px;
+        height: 30px;
+    }
+
+    #bestServicesTitulosSection{
+        gap: 20px;
+        text-align: start;
+        align-items: start;
+    }
+    .textsTitulosSectionTitle{
+        font-size: 48px;
+    }
+
+    .textsTitulosSectionSub{
+        font-size: 24px;
+    }
+    
+    .textsTitulosSection{
+        text-align: center;
+        align-items: center;
+    }
+
+    .stepCardParagraph{
+        font-size: 18px;
+    }
+
+    .stepsContainer{
+        text-align: start;
+        gap: 60px;
+    }
+
+    .stepCard{
+        align-items: start;
+    }
+
+    .resentProjectsContainer{
+        gap: 50px;
+    }
+
+    .bestServicesBox{
+        width: 650px;
+        height: 450px;
+    }
+
+    .bestServicesBox img{
+        width: 100%;
+        padding-top: 28%;
+    }
+
+    .bestServicesText{
+        font-size: 24px;
+        line-height: 1.8rem;
+    }
+
+    .whoWeAreContent img{
+        width: 40%;
+    }
+
+    .whoWeAreContent{
+        justify-content: space-between;
+    }
+
+    .whoWeAreTexts{
+        width: 60%;
+    }
+
+    .newsletterCard{
+        flex-direction: row;
+        gap: 40px;
+        height: 328px;
+    }
+
+    .newsletterContainer{
+        width: 50%;
+        justify-content: start;
+        align-items: start;
+        text-align: start;
+    }
+    .footerLine{
+        margin-top: 7%;
+    }
+    
+    .footerContainer{
+        height: 280px;
+    }
+
+    .footerContent{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footerContentContainerLogo{
+        width: 30%;
+    }
+
+}
+
+    @media screen and (min-width: 1440px){
+
+        .whoWeAreContent{
+            justify-content: space-between;
+        }
+
+        .whoWeAreTexts{
+            width: 60%;
+        }
+        .whoWeAreContent img {
+            width: 40%;
+        }
+
+        .whoWeAreTextsTitle{
+            font-size: 42px;
+        }
+
+        .whoWeAreTextsParagraph{
+            font-size: 24px;
+            line-height: 2rem;
+        }
+
+        .whoWeAreNumber{
+            font-size: 42px;
+        }
+
+        .whoWeAreName{
+            font-size: 18px;
+        }
+
+        .whoWeAreBtnContactUs{
+            width: 30%
+        }
+
+        .whoWeAreBtnReadMore{
+            width: 30%
+        }
+
+        .newsletter{
+            padding-top: 8%;
+        }
+
+        .newsletterTitle{
+            font-size: 60px;
+        }
+
+        .newsletterParagraph{
+            font-size: 25px;
+        }
+
+        .newsletterInput{
+            width: 230px;
+        }
+
+        .footerContent{
+            justify-content: space-around;
+        }
+    }
+   
